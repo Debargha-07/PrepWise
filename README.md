@@ -160,17 +160,42 @@ To get started with PrepWise on your local machine, follow the steps below:
    ```bash
    cd PrepWise
 
-3. **Create a Virtual Environment (Optional but Recommended)**
+3. **📥 Download Model Files**
+
+Due to GitHub’s file size limit , the trained machine learning assets are hosted externally.
+
+Please download the following files manually and place them inside the `artifacts/` directory:
+
+- [📦 Download `model.pkl`](https://drive.google.com/file/d/1KRlcmpX_XC5gLpjUnESqytZDSNABM9N_/view?usp=drivesdk)
+- [⚙️ Download `preprocessor.pkl`](https://drive.google.com/file/d/1MMtU-PIc7p57z_aGOMtf4Iry2G7CGFr3/view?usp=drivesdk)
+
+
+After downloading, ensure your folder structure looks like this:
+```
+PrepWise/
+├── artifacts/
+│ ├── model.pkl
+│ └── preprocessor.pkl
+├── src/
+│ └── ...
+├── app.py
+└── README.md
+```
+
+
+4. **Create a Virtual Environment (Optional but Recommended)**
 ```
 python -m venv venv
 source venv/bin/activate        # On Linux/macOS
 venv\Scripts\activate           # On Windows
 ```
-4. **Install All Dependencies**
+5. **Install All Dependencies**
 ```
 pip install -r requirements.txt
 ```
-5. **Run the Streamlit Application**
+
+
+6. **Run the Streamlit Application**
 
   Launch the app in your default browser using:
 ```
@@ -179,7 +204,7 @@ streamlit run app.py
 💡 The application will start in your default web browser at `http://localhost:8501`.
 
 
-6. **Login or Register**
+7. **Login or Register**
 
 - Once the app is running, either **log in with existing credentials** or **register a new user**.
 
