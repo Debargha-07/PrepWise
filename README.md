@@ -170,7 +170,7 @@ Please download the following files manually and place them inside the `artifact
 - [⚙️ Download `preprocessor.pkl`](https://drive.google.com/file/d/1MMtU-PIc7p57z_aGOMtf4Iry2G7CGFr3/view?usp=drivesdk)
 
 
-After downloading, ensure your folder structure looks like this:
+After downloading, replace the already present model.pkl and preprocessor.pkl with the downloaded ones and ensure your folder structure looks like this:
 ```
 PrepWise/
 ├── artifacts/
