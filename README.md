@@ -209,6 +209,17 @@ streamlit run app.py
 - Once the app is running, either **log in with existing credentials** or **register a new user**.
 
 - All credentials and prediction history are securely stored in the `src/users/user_data.json` file.
+
+
+⚠️ If this file is missing or improperly initialized (e.g., manually edited with incorrect formatting), the app may crash with a `JSONDecodeError` or `KeyError`.
+
+##### ✅ Recommended Setup:
+
+1. When cloning the repository, ensure that the folder `src/users/` exists.
+2. If the file `user_data.json` is not present or is empty/corrupted, the app will automatically recreate it as an empty JSON list (`[]`) on first run.
+3. **Do not manually edit** `user_data.json`. If needed, delete the file — the app will recreate it cleanly.
+
+
 ---
 
 ## 📚 Acknowledgements
